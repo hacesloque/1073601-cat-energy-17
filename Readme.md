@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Митрофанов](https://up.htmlacademy.ru/adaptive/17/user/1073601).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Деркач](https://htmlacademy.ru/profile/id87719).
 
 ---
 
