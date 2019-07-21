@@ -1,1 +1,31 @@
-//разметка
+.product-card {
+  &__list {
+    font-family: "Arial", "Helvetica", sans-serif;
+    .fonts(12px; 400; #444444; 16px);
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    .fonts(16px; 400; #111111; 20px);
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__volume-measure,
+  &__taste-measure,
+  &__price-measure {
+    text-align: right;
+  }
+
+  &__button {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

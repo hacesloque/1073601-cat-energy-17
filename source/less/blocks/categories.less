@@ -1,9 +1,32 @@
 .categories {
+  margin: 0;
+  padding: 20px 20px;
+  background-color: #ffffff;
+
+  &__card {
+    background-color: #f2f2f2;
+    padding: 23px 20px;
+
+    &:not(:last-of-type) {
+      margin: 0 0 20px 0;
+    }
+  }
+
   &__title {
     .fonts(24px; 400; #111111; 37px);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
   }
 
   &__text {
     .fonts(14px; 400; #444444; 18px);
+    text-align: left;
+  }
+
+  &__link {
+    .fonts(16px; 400; #444444; 16px);
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }

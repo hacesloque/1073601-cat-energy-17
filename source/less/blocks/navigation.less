@@ -1,13 +1,26 @@
 .navigation {
-  .outline(blue);
   .fonts(20px; 700; #111111; 20px);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
 
   a {
+    display: block;
+    padding: 23px 0;
     text-decoration: none;
     color: #111111;
   }
 
   &__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    /*//псевдоэлементами сделаю верх. и нижн. рамки для пунктов меню*/
+    &:not(:first-of-type) {
+      margin-top: -1px;
+    }
   }
 }
