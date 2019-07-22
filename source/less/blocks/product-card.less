@@ -1,31 +1,43 @@
-.product-card {
-  &__list {
-    font-family: "Arial", "Helvetica", sans-serif;
-    .fonts(12px; 400; #444444; 16px);
-    margin: 0;
-    padding: 0;
-  }
+.product-card__image-link {
+  display: block;
+  max-width: 140px;
+  max-height: 144px;
+}
 
-  h2 {
-    .fonts(16px; 400; #111111; 20px);
-    font-family: "Oswald Regular", "Arial", sans-serif;
-    text-transform: uppercase;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
+.product-card__list {
+  font-family: @arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: @gray;
+}
 
-  &__volume-measure,
-  &__taste-measure,
-  &__price-measure {
-    text-align: right;
-  }
+.product-card__title {
+  margin: 0;
 
-  &__button {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: @oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: @black;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product-card__volume-measure,
+.product-card__taste-measure,
+.product-card__price-measure {
+  text-align: right;
+}
+
+.product-card__button {
+  display: block;
+  padding: 10px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+
+  &--green {
+    background-color: @green;
   }
 }
