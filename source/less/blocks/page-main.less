@@ -1,4 +1,26 @@
 .page-main {
   margin: 0;
+  padding: 0;
+}
+
+.page-main__container {
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
 }

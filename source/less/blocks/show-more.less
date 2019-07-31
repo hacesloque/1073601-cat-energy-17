@@ -1,9 +1,11 @@
 .show-more {
+  margin-top: 80px;
   text-align: center;
 }
 
 .show-more__title {
   margin: 0;
+  margin-bottom: 7px;
 
   font-size: 16px;
   font-weight: 400;
@@ -12,6 +14,7 @@
 
 .show-more__text {
   margin: 0;
+  margin-bottom: 20px;
 
   font-family: @secondaryFont;
   font-size: 12px;
@@ -28,5 +31,22 @@
 
   &--gray {
     background-color: @light-gray;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .show-more {
+    margin: 0;
+    padding: 40px 38px;
+
+    //временно
+    background-color: @light-gray;
+    height: 432px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show-more {
+    width: 169px;
   }
 }

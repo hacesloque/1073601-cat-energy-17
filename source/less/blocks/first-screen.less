@@ -1,24 +1,28 @@
 .first-screen {
+  margin: 0 auto;
+  width: 280px;
   text-align: center;
+  padding-top: 29px;
 
-  background: url("../img/index-background-mobile@1x.jpg") top no-repeat @white;
+  color: @white;
+
+  //временно
+  //background-color: rgba(0, 0, 0, 0.5);
 }
 
 .first-screen__title {
-  margin: 0;
+  margin: 0 0 24px 0;
 
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: @white;
 }
 
 .first-screen__intro {
-  margin: 0;
+  margin: 0 0 28px 0;
 
   font-size: 14px;
   line-height: 14px;
-  color: @white;
   text-transform: uppercase;
 }
 
@@ -34,5 +38,76 @@
 
   &--green {
     background-color: @green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .first-screen {
+    position: relative;
+    width: 528px;
+    padding-top: 54px;
+    margin-bottom: 510px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: @black;
+    text-align: left;
+  }
+
+  .first-screen__title {
+    margin-bottom: 38px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .first-screen__intro {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .first-screen__picture {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    z-index: -1;
+    order: 4;
+
+    //временно
+
+    width: 709px;
+    height: 609px;
+  }
+
+  .first-screen__button {
+    padding: 15px 25px 15px 25px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .first-screen {
+    margin: 0;
+    margin-bottom: 150px;
+    padding: 105px 83px;
+  }
+
+  .first-screen__picture {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    z-index: -1;
+    order: 4;
+
+    //временно
+
+    width: 552px;
+    height: 499px;
   }
 }

@@ -1,3 +1,9 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__link {
   font-family: @secondaryFont;
   font-size: 16px;
@@ -9,4 +15,10 @@
   display: block;
   max-width: 27px;
   max-height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-right: 23px;
+  }
 }

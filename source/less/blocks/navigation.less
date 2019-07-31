@@ -4,7 +4,24 @@
   text-align: center;
   text-transform: uppercase;
 
-  background-color: @white;
+  //Временно
+  //background-color: rgba(247, 11, 189, 0.5);
+  min-height: 198px;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation {
+    width: 500px;
+
+    //Временно
+    min-height: 66px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation {
+    width: 895px;
+  }
 }
 
 .navigation__list {
@@ -16,7 +33,6 @@
 
 .navigation__link {
   display: block;
-  padding: 23px 0;
 
   color: @black;
 }
