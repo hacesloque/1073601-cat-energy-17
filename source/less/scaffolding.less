@@ -1,12 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
+
   font-family: @primaryFont;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: @black;
+
   background-color: @white;
   /*background-image: url("../img/cat-energy-catalog-mobile.jpg");
   background-position: 50% 0;

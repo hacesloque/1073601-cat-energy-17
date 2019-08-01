@@ -7,13 +7,12 @@
 }
 
 .page-header__container {
-  width: 320px;
-  margin: 0 auto;
+  .container(@mobile-width; 0);
 }
 
 .page-header__top-bar {
-  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 
   //Временно
   //background-color: rgba(0, 0, 0, 0.5);
@@ -29,8 +28,8 @@
   }
 
   .page-header__container {
-    width: 708px;
-    padding: 0 30px;
+    .container(@tablet-width; 30px);
+
     display: flex;
     justify-content: space-between;
 
@@ -39,8 +38,9 @@
   }
 
   .page-header__top-bar {
-    margin: 0;
     width: 190px;
+    margin: 0;
+    padding: 0;
 
     //Временно
     height: 65px;
@@ -49,8 +49,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header__container {
-    width: 1220px;
-    padding: 0 40px;
+    .container(@desktop-width; 40px);
     margin-top: 54px;
   }
 
@@ -61,6 +60,7 @@
 
 .page-header__logo-img {
   display: block;
+
   max-width: 33px;
   max-height: 38px;
 }

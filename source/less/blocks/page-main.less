@@ -4,23 +4,17 @@
 }
 
 .page-main__container {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  .container(@mobile-width; 20px);
 }
 
 @media (min-width: @tablet-width) {
   .page-main__container {
-    width: 708px;
-    margin: 0 auto;
-    padding: 0 30px;
+    .container(@tablet-width; 30px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__container {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
+    .container(@desktop-width; 40px);
   }
 }

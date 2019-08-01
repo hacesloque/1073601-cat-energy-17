@@ -36,8 +36,8 @@
 }
 
 .product-card__button {
-  width: 100%;
   display: block;
+  width: 100%;
   padding: 10px 0;
 
   text-align: center;
@@ -51,11 +51,12 @@
 
 @media (min-width: @tablet-width) {
   .product-card {
+    flex-direction: column;
+
     width: 248px;
     margin-bottom: 260px;
     padding-left: 38px;
     padding-right: 38px;
-    flex-direction: column;
   }
 }
 
