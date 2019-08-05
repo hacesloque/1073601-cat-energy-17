@@ -5,7 +5,11 @@
 .categories__card {
   padding: 23px 20px;
 
-  background-color: @light-gray;
+  //background-color: @light-gray;
+
+  //временно
+  //background-color: rgba(9, 241, 210, 0.5);
+  height: 222px;
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
@@ -34,4 +38,29 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .categories__card {
+    padding: 80px 52px 64px 52px;
+    //временно
+    height: 226px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__card {
+
+    //временно
+    width: 467px;
+  }
 }

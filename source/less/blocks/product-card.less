@@ -1,3 +1,9 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .product-card__image-link {
   display: block;
   max-width: 140px;
@@ -31,6 +37,7 @@
 
 .product-card__button {
   display: block;
+  width: 100%;
   padding: 10px 0;
 
   text-align: center;
@@ -39,5 +46,22 @@
 
   &--green {
     background-color: @green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product-card {
+    flex-direction: column;
+
+    width: 248px;
+    margin-bottom: 260px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card {
+    width: 169px;
   }
 }

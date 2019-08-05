@@ -1,6 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
+  min-width: 320px;
 
   font-family: @primaryFont;
   font-size: 16px;
@@ -9,6 +20,12 @@ body {
   color: @black;
 
   background-color: @white;
+  /*background-image: url("../img/cat-energy-catalog-mobile.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-color: darkgrey;
+  background-size: 320px auto;
+  min-height: 3200px;*/
 }
 
 a {
@@ -25,15 +42,36 @@ picture {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
   border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*@media (min-width: @tablet-width) {
+  body {
+    background-image: url("../img/cat-energy-catalog-tablet.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: darkgrey;
+    background-size: 768px auto;
+    min-height: 4333px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background-image: url("../img/cat-energy-catalog-desktop.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: darkgrey;
+    background-size: 1440px auto;
+    min-height: 2809px;
+  }
+}
+*/
