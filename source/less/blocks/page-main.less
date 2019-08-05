@@ -4,17 +4,6 @@
 }
 
 .page-main__container {
-  .container(@mobile-width; 20px);
-}
-
-@media (min-width: @tablet-width) {
-  .page-main__container {
-    .container(@tablet-width; 30px);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-main__container {
-    .container(@desktop-width; 40px);
-  }
+  .container();
+  padding: 0 20px;
 }
